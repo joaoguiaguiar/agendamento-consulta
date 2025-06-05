@@ -1,7 +1,6 @@
 import { useState, type ChangeEvent } from 'react';
 import { Calendar, User, Mail, Stethoscope, Plus, Clock } from 'lucide-react';
 
-// Types
 interface Appointment {
   id: string;
   name: string;
@@ -31,7 +30,6 @@ interface FormErrors {
 
 const generateId = () => Math.random().toString(36).substr(2, 9);
 
-// Componente principal
 export function FormPage({ onSubmit, onBack }: FormPageProps) {
   const [form, setForm] = useState<FormState>({
     name: '',
