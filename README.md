@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-Este projeto usa React, TypeScript e Vite para criar um sistema simples de agendamento de consultas médicas. A interface é feita com Tailwind CSS (via CDN) e os formulários são gerenciados com Formik.
+Este projeto usa React, TypeScript e Vite para criar um sistema simples de agendamento de consultas médicas. A interface é feita com Tailwind CSS.
 
 ## Tecnologias principais
 
@@ -38,6 +38,5 @@ Este projeto usa React, TypeScript e Vite para criar um sistema simples de agend
 ## Objetivos
 
 - Praticar React com TypeScript  
-- Aplicar Tailwind direto via CDN  
-- Trabalhar sem backend (tudo em memória)  
+- Aplicar Tailwind   
 - Reforçar conceitos de props, estado e componentização  
