@@ -28,13 +28,6 @@ Este projeto usa React, TypeScript e Vite para criar um sistema simples de agend
 - `AppointmentCard`: componente de exibição de cada consulta  
 - `App.tsx`: controla a navegação entre as páginas  
 
-## Como rodar
-
-1. Clone o projeto  
-2. Instale as dependências com `npm install`  
-3. Rode o projeto com `npm run dev`  
-4. Acesse em `http://localhost:5173`  
-
 ## Objetivos
 
 - Praticar React com TypeScript  
