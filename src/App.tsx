@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Dashboard from "./pages/Dashboard";
-import { FormPage } from "./pages/FormPage";
+import FormPage  from "./pages/FormPage";
 
 type Appointment = {
   id: string;
