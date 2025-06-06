@@ -1,4 +1,3 @@
-// components/AppointmentCard.tsx
 import { Calendar, Edit3, Mail, Trash2, X, Save } from "lucide-react";
 import { useState } from "react";
 

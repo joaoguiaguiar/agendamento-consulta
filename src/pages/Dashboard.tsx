@@ -16,9 +16,18 @@ interface DashboardProps {
   onNewAppointment: () => void;
 }
 
-function Dashboard({ appointments, onEdit, onDelete, onNewAppointment }: DashboardProps) {
-  const upcomingAppointments = appointments.filter(apt => new Date(apt.date) >= new Date());
-  const pastAppointments = appointments.filter(apt => new Date(apt.date) < new Date());
+const Dashboard: React.FC<DashboardProps> = ({
+  appointments,
+  onEdit,
+  onDelete,
+  onNewAppointment
+}) => {
+  const upcomingAppointments = appointments.filter(
+    apt => new Date(apt.date) >= new Date()
+  );
+  const pastAppointments = appointments.filter(
+    apt => new Date(apt.date) < new Date()
+  );
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 p-4">
@@ -45,7 +54,7 @@ function Dashboard({ appointments, onEdit, onDelete, onNewAppointment }: Dashboa
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
             <div className="flex items-center justify-between">
               <div>
@@ -57,7 +66,7 @@ function Dashboard({ appointments, onEdit, onDelete, onNewAppointment }: Dashboa
               </div>
             </div>
           </div>
-          
+
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
             <div className="flex items-center justify-between">
               <div>
@@ -118,7 +127,7 @@ function Dashboard({ appointments, onEdit, onDelete, onNewAppointment }: Dashboa
                 </div>
               </div>
             )}
-            
+
             {pastAppointments.length > 0 && (
               <div>
                 <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
@@ -142,6 +151,6 @@ function Dashboard({ appointments, onEdit, onDelete, onNewAppointment }: Dashboa
       </div>
     </div>
   );
-}
+};
 
 export default Dashboard;

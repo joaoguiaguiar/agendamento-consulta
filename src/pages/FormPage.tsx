@@ -28,9 +28,9 @@ interface FormErrors {
   date?: string;
 }
 
-const generateId = () => Math.random().toString(36).substr(2, 9);
+const generateId = (): string => Math.random().toString(36).substr(2, 9);
 
-export function FormPage({ onSubmit, onBack }: FormPageProps) {
+const FormPage = ({ onSubmit, onBack }: FormPageProps) => {
   const [form, setForm] = useState<FormState>({
     name: '',
     email: '',
@@ -192,4 +192,6 @@ export function FormPage({ onSubmit, onBack }: FormPageProps) {
       </div>
     </div>
   );
-}
+};
+
+export default FormPage;
